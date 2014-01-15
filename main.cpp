@@ -16,9 +16,21 @@ int main()
     */
 
     auto data=load_data("nor.data");   
-    
+ 
     print_vector(data.first);
-    print_matrix(data.second);
+    //print_matrix(data.second);
+
+    std::vector<double> v1 = {1,1,1,1}; 
+    std::vector<double> v2 = {1,2,3,4};
+
+    print_vector(v1*3);
+    std::cout <<  v1*v2 << std::endl;
+    std::cout <<  (v1*3)*v2 << std::endl; 
+
+    print_vector(v1 + v2);
+    print_vector(v1 - v2);
+
+    std::cout << norm(v1) << std::endl;   
 
     return 0;
 }
