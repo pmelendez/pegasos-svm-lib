@@ -20,17 +20,10 @@ int main()
     print_vector(data.first);
     //print_matrix(data.second);
 
-    std::vector<double> v1 = {1,1,1,1}; 
-    std::vector<double> v2 = {1,2,3,4};
+    //RBF rbf(0.01);
+    
+    //std::cout << rbf(data.first,data.first-std::vector<double>({0.00001,0.00001,0.00001,0.00001})) << std::endl;
 
-    print_vector(v1*3);
-    std::cout <<  v1*v2 << std::endl;
-    std::cout <<  (v1*3)*v2 << std::endl; 
-
-    print_vector(v1 + v2);
-    print_vector(v1 - v2);
-
-    std::cout << norm(v1) << std::endl;   
 
     return 0;
 }

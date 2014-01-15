@@ -394,7 +394,7 @@ class PegasosTrainer
 {
     public:
  
-    Model train(const std::vector<std::vector<double>> &TS, std::vector<double> labels, double learning_rate,int iterations, bool kernel,  double gamma=-1.0)
+    static Model train(const std::vector<std::vector<double>> &TS, std::vector<double> labels, double learning_rate,int iterations, bool kernel,  double gamma=-1.0)
     {
         
         if(!kernel)
